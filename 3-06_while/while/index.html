@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>3-09_fizzbuzz</title>
+    <title>3-06_while</title>
     <link href="../../_common/images/favicon.ico" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
     <link href="../../_common/css/style.css" rel="stylesheet">
@@ -13,15 +13,15 @@
 <body>
     <header>
         <div class="container">
-            <h1>FizzBuzz</h1>
-            <h2>30までの数でFizzBuzz</h2>
+            <h1>1枚、2枚、3枚…と出力する</h1>
+            <h2>文字列同士を連結する</h2>
         </div>
         <!-- /.container -->
     </header>
     <main>
         <div class="container">
             <section>
-
+                <p>コンソールを開きます。</p>
             </section>
         </div>
         <!-- /.container -->
@@ -32,26 +32,7 @@
         </div>
         <!-- /.container -->
     </footer>
-    <script>
-        'use strict';
-
-        function fizzbuzz(num) {
-            if (num % 3 === 0 && num % 5 === 0) {
-                return 'fizzbuzz';
-            } else if (num % 3 === 0) {
-                return 'fizz';
-            } else if (num % 5 === 0) {
-                return 'buzz';
-            } else {
-                return num;
-            }
-        }
-
-        let i = 1;
-        while (i <= 30) {
-            console.log(fizzbuzz(i));
-            i += 1;
-        }
+    <script src="./main.js">
     </script>
 </body>
 
